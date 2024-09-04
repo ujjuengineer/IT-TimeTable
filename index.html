@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMMUT - Information Technology Timetable</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+            margin: 10px;
+            letter-spacing: 1.2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 90%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin-bottom: 50px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.3s ease-in-out;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        td {
+            font-size: 16px;
+            color: #555;
+        }
+        .highlight {
+            background-color: #ffe135; /* Highlight color */
+            font-weight: bold;
+        }
+        .large-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6347;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+        td, th {
+            border-right: 1px solid #ddd;
+        }
+        td:last-child, th:last-child {
+            border-right: none;
+        }
+        td:first-child, th:first-child {
+            border-left: 1px solid #ddd;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            table {
+                width: 100%;
+                font-size: 14px;
+            }
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MMMUT</h1>
+    <h2>Information Technology Timetable - Section A</h2>
+
+    <table>
+        <!--first row of heading-->
+        <tr>
+            <th>Day/Period</th>
+            <th>I(9.30-10.20)</th>
+            <th>II(10.20-11.10)</th>
+            <th>III(11.10-12.00)</th>
+            <th>IV(12.00-12.50)</th>
+            <th>V(2.20-3.10)</th>
+            <th>VI(3.10-4.00)</th>
+            <th>VII(4.00-4.50)</th>
+        </tr>
+        <!--monday-->
+        <tr>
+            <td rowspan="2">MONDAY</td>
+            <td colspan="2">P1/Web Designing</td>
+            <td colspan="2">P2/Web Designing</td>
+            <td colspan="3" rowspan="4">Break</td>
+        </tr>       
+        <tr>
+            <td colspan="2">P2/bit-103/HS</td>
+            <td colspan="2">P1/bit-103/HS</td>
+        </tr>
+
+        <!--tuesday-->
+        <tr>
+            <td rowspan="2">Tuesday</td>
+            <td colspan="2">P2/Web Designing</td>
+            <td colspan="2">P1/Web Designing</td>
+        </tr>       
+        <tr>
+            <td colspan="2">P1/bit-103/HS</td>
+            <td colspan="2">P2/bit-103/HS</td>
+        </tr>
+        <!--wednesday-->
+        <tr>
+            <td>Wednesday</td>
+            <td>L/BIT-103/<br>SPS</td>
+            <td>L/BSM-131<br>DKD</td>
+            <td colspan="2">BREAK</td>
+            <td>L/Web Designing/TS-201</td>
+            <td>T2/BSM-110<br>GF11</td>
+            <td>L/BHS-101</td>
+        </tr>
+        <!--thursday-->
+        <tr>
+            <td>Thursday</td>
+            <td>L/BIT-103/<br>SPS</td>
+            <td>L/BSM-131<br>DKD</td>
+            <td>L/BSM-110/GF11</td>
+            <td>L/BHS-101</td>
+            <td>T1/BSM-110<br>GF11</td>
+            <td>L/BHS-101</td>
+            <td>T1/BHS-101</td>
+        </tr>
+        <!--friday-->
+        <tr>
+            <td>Friday</td>
+            <td>L/BIT-103/<br>SPS</td>
+            <td>L/BSM-131<br>DKD</td>
+            <td>L/BSM-110/GF11</td>
+            <td>BREAK</td>
+            <td colspan="2">P1/BSM-131</td>
+            <td>T2/BHS-101</td>
+        </tr>
+        <!--saturday-->
+        <tr>
+            <td>Saturday</td>
+            <td colspan="2">P2/BSM-131</td>
+            <td>L/BSM-110/GF11</td>
+            <td>L/BIT-104/RS</td>
+            <td colspan="3">BREAK</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
