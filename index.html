@@ -7,100 +7,68 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            color: #333;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #fff;
-            margin: 10px;
-            letter-spacing: 1.2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            font-size: 32px;
-            margin-top: 20px;
-        }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        table {
-            width: 90%;
-            max-width: 800px;
-            border-collapse: collapse;
-            background: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            margin-bottom: 50px;
-        }
-        th, td {
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-            transition: all 0.3s ease-in-out;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-            font-weight: bold;
-        }
-        td {
-            font-size: 16px;
-            color: #555;
-        }
-        .highlight {
-            background-color: #ffe135; /* Highlight color */
-            font-weight: bold;
-        }
-        .large-text {
-            font-size: 20px;
-            font-weight: bold;
-            color: #ff6347;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-            transform: scale(1.02);
-            cursor: pointer;
-        }
-        td, th {
-            border-right: 1px solid #ddd;
-        }
-        td:last-child, th:last-child {
-            border-right: none;
-        }
-        td:first-child, th:first-child {
-            border-left: 1px solid #ddd;
-        }
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: #fff;
+}
 
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 28px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            table {
-                width: 100%;
-                font-size: 14px;
-            }
-            th, td {
-                padding: 10px;
-            }
-        }
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 1200px; /* Limits the maximum width on larger screens */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.3); /* Darker background for headers */
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+}
+
+tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.15); /* Alternating row colors */
+}
+
+tr:hover td {
+    background-color: rgba(0, 0, 0, 0.1); /* Highlight on hover */
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        white-space: nowrap; /* Prevent table cells from wrapping */
+    }
+    
+    th, td {
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+    
+    h1 {
+        font-size: 20px; /* Adjust title size for smaller screens */
+    }
+}
     </style>
 </head>
 <body>
